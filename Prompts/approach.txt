@@ -1,0 +1,30 @@
+Types for advanced prompting techniques.
+1. Reference prompting.
+2. Zero-shot and few-shot prompting.
+3. Chain-of-thought prompting.
+4. Take a deep breath and work step by step.
+5. Generated knowledge prompting.
+6. Tree-of-thought prompting.
+7. Directional Stimulus prompting.
+8. Chain-of-density prompting.
+
+To choose the right prmoting technique, let's first understand the nature of problem that we are trying to get the GenAI to help with.
+The problem: 
+Design and architect an ecommerce website for selling shoes online.
+
+Now, let's try to split this up into functional and non-functional requirements. 
+
+Functional requirements are basically the business requirements or the features you want your website to have. These could include things such as User Login/Logout, Product Search page etc.
+Non-functional requirements are those which are more on technical side but still can make an impact on your business. For example, the website up-time (e.g. 99.9% uptime), scalibility (how scalable your website is if you have a surge or unexpected volume.), performance (how responsive is your website, how much time it takes for search results to load up etc.).
+
+Now, since this is an experiment and we are not actually designing a website, we are going to choose just 3 functional and non-functional requirements to focus on.
+
+Functional Requirements:
+1. User Login/Register page.
+2. User landing page.
+3. Product Search page.
+
+Non-functional requirements:
+1. High availability (website should be available 99.99% of the time).
+2. Scalibility (architecture should be scalable enough to be able to handle traffic surges).
+3. Performance (website pages such as product search page should not have response time of more than 2 secs).
