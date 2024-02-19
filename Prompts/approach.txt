@@ -28,3 +28,23 @@ Non-functional requirements:
 1. High availability (website should be available 99.99% of the time).
 2. Scalibility (architecture should be scalable enough to be able to handle traffic surges).
 3. Performance (website pages such as product search page should not have response time of more than 2 secs).
+
+Now, even with the small set of requirements, this still is a fairly complex problem. So, we will need to ensure two things,
+1. Choose the right prompt technique: Since this is an experiment, I am not sure what would be the best way to solve this problem, but let's take below two techniques as a starting point,
+    a) deep-breath technique:
+        This technique is useful when you have a complex problem and you need a detailed breakdown of the solution by the GenAI model.
+    b) tree-of-thought technique
+        This technique is useful when you have a complexd problem that you want to breakdown into smaller chunks and instruct the GenAI model to solve each small chunk parallely. That way you get to the result faster.
+2. Choosing the right prompt
+    This is crucial, since you will need to give enough information for ChatGPT to be able to figure out how to go about solving the problem. But at the 
+    same time, make sure to not give any critical hints which the model may repeat as probable solution in the output.
+
+For choosing the right prompt. ChatGPT 3.5 allows 4096 tokens, so that's 4096 units of text, which should be enough token size for our use case. Let's begin first see how an architect will go about solving this design problem and what are the questions that they might ask.
+1. As an architect, I will first look at the functional requirement, since that is the whole point of doing the design. The non-functional requirements is something,
+that I could think of when I am thinking about when fine tuning my design. So let's list the functional requirements step by step,
+a) User Login/Register page: Now, the first thing that comes to my mind when I think about designing this page is the different decisions that I will need to make
+   as an architect. For example, authentication and authorization mechanism, user database (SQL or NoSQL), user management etc. Since, our experiment is to let ChatGPT
+   help us with these decisions, let's ask ChatGPT the very same question. So for this, my prompt would be,
+   Prompt: 
+           Take a deep breath and think about this problem step by step, 
+           if I am creating a user login and register page for an ecommerce website, as an architect what are the design decisions that I will need to make?
