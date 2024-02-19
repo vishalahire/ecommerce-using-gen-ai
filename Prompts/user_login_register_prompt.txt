@@ -1,0 +1,2 @@
+Take a deep breath and think about this problem step by step, 
+if I am creating a user login and register page for an ecommerce website, as an architect what are the design decisions that I will need to make?

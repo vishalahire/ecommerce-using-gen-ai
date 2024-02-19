@@ -44,7 +44,4 @@ For choosing the right prompt. ChatGPT 3.5 allows 4096 tokens, so that's 4096 un
 that I could think of when I am thinking about when fine tuning my design. So let's list the functional requirements step by step,
 a) User Login/Register page: Now, the first thing that comes to my mind when I think about designing this page is the different decisions that I will need to make
    as an architect. For example, authentication and authorization mechanism, user database (SQL or NoSQL), user management etc. Since, our experiment is to let ChatGPT
-   help us with these decisions, let's ask ChatGPT the very same question. So for this, my prompt would be,
-   Prompt: 
-           Take a deep breath and think about this problem step by step, 
-           if I am creating a user login and register page for an ecommerce website, as an architect what are the design decisions that I will need to make?
+   help us with these decisions, let's ask ChatGPT the very same question. So for this, my prompt would be ""
